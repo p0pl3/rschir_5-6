@@ -25,4 +25,6 @@ public class Book {
     private ProductType productType = ProductType.BOOK;
     @Column
     private String author;
+    @Column
+    private int total_q;
 }

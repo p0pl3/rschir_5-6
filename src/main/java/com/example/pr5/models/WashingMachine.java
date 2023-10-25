@@ -27,4 +27,6 @@ public class WashingMachine {
     private String manufacturer;
     @Column
     private int volume;
+    @Column
+    private int total_q;
 }

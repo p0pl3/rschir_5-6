@@ -27,5 +27,6 @@ public class Telephone {
     private String manufacturer;
     @Column
     private int battery;
-
+    @Column
+    private int total_q;
 }

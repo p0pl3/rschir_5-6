@@ -5,7 +5,7 @@ services:
     image: 'docker-spring-boot-postgres:latest'
     build:
       context: .
-    container_name: rschir5_app
+    container_name: rschir6_app
     depends_on:
       - db
     environment:
@@ -14,18 +14,20 @@ services:
       - SPRING_DATASOURCE_PASSWORD=postgres
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
     networks:
-      - php_5
+      - php_6
     ports:
       - "8080:8080"
   db:
     image: 'postgres:15-alpine'
-    container_name: rschir5_db
+    container_name: rschir6_db
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     networks:
-      - php_5
+      - php_6
     ports:
       - "5432:5432"
+
 networks:
-  php_5:
+  php_6:
+
